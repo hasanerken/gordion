@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
+const result = await $fetch('https//fiber.railway.internal/tenants')
 </script>
 
 <template>
@@ -9,7 +10,7 @@ const runtimeConfig = useRuntimeConfig()
       Merhaba
     </n-button>
     <div>
-      {{ runtimeConfig.public }}
+      {{ result }}
     </div>
   </div>
 </template>
