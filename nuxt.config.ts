@@ -10,4 +10,9 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true,
   },
+  runtimeConfig: {
+    public: {
+      apiBase: 'https://fiber-development-a034.up.railway.app',
+    },
+  },
 })
