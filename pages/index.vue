@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
-const result = await $fetch('https//fiber.railway.internal/tenants')
+const result = await $fetch('/tenants')
 </script>
 
 <template>
