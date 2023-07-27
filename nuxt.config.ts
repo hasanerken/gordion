@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: 'https://fiber-development-a034.up.railway.app',
+      baseUrl: 'https://xhantos-development.up.railway.app',
     },
   },
 })

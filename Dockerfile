@@ -30,8 +30,6 @@ WORKDIR /app
 COPY --from=builder /app  /app
 
 # expose the host and port 3000 to the server
-ARG BACKEND_URL
-ENV BACKEND_URL=$BACKEND_URL
 ENV HOST 0.0.0.0
 EXPOSE 3000
 
