@@ -53,6 +53,9 @@ definePageMeta({
         <n-button class="mt-5 h-12" color="#89C225" focusable ghost>
           More Information
         </n-button>
+        <nuxt-link class="m-5" :to="{ name: 'auth-login' }">
+          Login
+        </nuxt-link>
       </n-card>
     </n-space>
   </n-space>
