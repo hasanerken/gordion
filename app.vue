@@ -11,16 +11,16 @@ const themeConfig: ThemeConfig = {
   },
   light: {
     common: {
-      primaryColor: theme.colors.blue[600],
-      primaryColorHover: theme.colors.blue[500],
-      primaryColorPressed: theme.colors.blue[700],
+      // primaryColor: theme.colors.blue[600],
+      // primaryColorHover: theme.colors.blue[500],
+      // primaryColorPressed: theme.colors.blue[700],
     },
   },
   dark: {
     common: {
-      primaryColor: theme.colors.blue[500],
-      primaryColorHover: theme.colors.blue[400],
-      primaryColorPressed: theme.colors.blue[600],
+      // primaryColor: theme.colors.blue[500],
+      // primaryColorHover: theme.colors.blue[400],
+      // primaryColorPressed: theme.colors.blue[600],
     },
   },
 }
@@ -29,7 +29,9 @@ const themeConfig: ThemeConfig = {
 <template>
   <div>
     <NaiveConfig :theme-config="themeConfig">
-      <NuxtPage />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </NaiveConfig>
   </div>
 </template>

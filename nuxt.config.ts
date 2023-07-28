@@ -1,10 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
+  css: [
+    '/assets/main.css',
+  ],
   modules: ['@bg-dev/nuxt-naiveui', '@nuxtjs/tailwindcss'],
   naiveui: {
     colorModePreference: 'light',
-    iconSize: 18,
+    iconSize: 20,
     themeConfig: {},
   },
   tailwindcss: {
